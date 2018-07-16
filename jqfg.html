@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link href="css/amazeui.min.css" rel="stylesheet">
+    <title>景区风光</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+    window.onload = function() {
+        var oBtn = document.getElementById("btn");
+        var oDiv = document.getElementById("nav_wrap");
+        var flag = 1;
+
+        oBtn.onclick = function() {
+            if (flag) {
+                oDiv.style.display = "block";
+                oDiv.onclick = function() {
+                    this.style.display = "none";
+                }
+            } else {
+                oDiv.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="index.html" class="back"><i class="iconfont">&#xe63c;</i></a>
+        <p class="h_tit">景区风光</p>
+        <a class="iconfont menu" href="javascript:;" id="btn">&#xe696;</a>
+    </div>
+    <!-- end header -->
+    <!-- 下拉菜单 -->
+    <div class="nav_wrap" id="nav_wrap" style="display:none;">
+        <ul class="nav">
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe696;</i>
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="jbjgk.html">
+                    <i class="iconfont">&#xe606;</i>
+                    <span>酒埠江旅游区</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqzx.html">
+                    <i class="iconfont">&#xe69e;</i>
+                    <span>景区新闻</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqfg.html">
+                    <i class="iconfont">&#xe73b;</i>
+                    <span>景区风光</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqsp.html">
+                    <i class="iconfont">&#xe647;</i>
+                    <span>景区视频</span>
+                </a>
+            </li>
+            <li>
+                <a href="whcs.html">
+                    <i class="iconfont">&#xe63f;</i>
+                    <span>景区文化</span>
+                </a>
+            </li>
+            <li>
+                <a href="wssc.html">
+                    <i class="iconfont">&#xe622;</i>
+                    <span>网上商城</span>
+                </a>
+            </li>
+            <li>
+                <a href="zxly.html">
+                    <i class="iconfont">&#xe698;</i>
+                    <span>服务中心</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="iconfont">&#xe673;</i>
+                    <span>关于我们</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- end 下拉菜单 -->
+    <!-- content -->
+    <div class="content">
+        <div class="jqfg_wrap">
+            <ul class="jqfg_list">
+                <li>
+                    <a href="#">
+                        <img src="img/jqfg_li01.png" class="jqfg_pic"/>
+                        <p class="jqfg_headline">酒埠江旅游区</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/jqfg_li02.png" class="jqfg_pic"/>
+                        <p class="jqfg_headline">酒仙湖风景区</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/jqfg_li03.png" class="jqfg_pic"/>
+                        <p class="jqfg_headline">宝宁寺</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/jqfg_li04.png" class="jqfg_pic"/>
+                        <p class="jqfg_headline">白龙洞</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/jqfg_li05.png" class="jqfg_pic"/>
+                        <p class="jqfg_headline">仙人桥</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- footer -->
+        <p class="footer">Copyright © 2017 www.jiubujiang.com.cn All Rights Reserved</p>
+        <!-- end footer -->
+    </div>
+    <!-- end content -->
+
+    <!-- 底部菜单 -->
+    <ul class="nav_bar clear">
+        <li>
+            <a href="index.html">
+                <p class="n_pic"><i class="iconfont">&#xe61c;</i></p>
+                <p class="n_txt">首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <p class="n_pic"><i class="iconfont">&#xe622;</i></p>
+                <p class="n_txt">网上商城</p>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <p class="n_pic"><i class="iconfont">&#xe698;</i></p>
+                <p class="n_txt">服务中心</p>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <p class="n_pic"><i class="iconfont">&#xe673;</i></p>
+                <p class="n_txt">关于我们</p>
+            </a>
+        </li>
+    </ul>
+    <!-- end 底部菜单 -->
+    <script src="js/amazeui.min.js"></script>
+    <script src="js/amazeui.page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link href="css/amazeui.min.css" rel="stylesheet">
+    <title>招贤纳士</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+    window.onload = function() {
+        var oBtn = document.getElementById("btn");
+        var oDiv = document.getElementById("nav_wrap");
+        var flag = 1;
+
+        oBtn.onclick = function() {
+            if (flag) {
+                oDiv.style.display = "block";
+                oDiv.onclick = function() {
+                    this.style.display = "none";
+                }
+            } else {
+                oDiv.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="index.html" class="back"><i class="iconfont">&#xe63c;</i></a>
+        <p class="h_tit">服务中心</p>
+        <a class="iconfont menu" href="javascript:;" id="btn">&#xe696;</a>
+    </div>
+    <!-- end header -->
+   <!-- 下拉菜单 -->
+   <div class="nav_wrap" id="nav_wrap" style="display:none;">
+    <ul class="nav">
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont">&#xe696;</i>
+                <span>导航</span>
+            </a>
+        </li>
+        <li>
+            <a href="jbjgk.html">
+                <i class="iconfont">&#xe606;</i>
+                <span>酒埠江旅游区</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqzx.html">
+                <i class="iconfont">&#xe69e;</i>
+                <span>景区新闻</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqfg.html">
+                <i class="iconfont">&#xe73b;</i>
+                <span>景区风光</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqsp.html">
+                <i class="iconfont">&#xe647;</i>
+                <span>景区视频</span>
+            </a>
+        </li>
+        <li>
+            <a href="whcs.html">
+                <i class="iconfont">&#xe63f;</i>
+                <span>景区文化</span>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <i class="iconfont">&#xe622;</i>
+                <span>网上商城</span>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <i class="iconfont">&#xe698;</i>
+                <span>服务中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <i class="iconfont">&#xe673;</i>
+                <span>关于我们</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- end 下拉菜单 -->
+    <!-- content -->
+    <div class="content">
+        <!-- zxly_nav -->
+        <div class="zxly_nav_wrap">
+            <ul class="zxly_nav">
+                <li>
+                    <a href="zxly.html">在线留言</a>
+                </li>
+                <li>
+                    <a href="lyzx.html">旅游咨询</a>
+                </li>
+                <li>
+                    <a class="zxly_active" href="zxns.html">招贤纳士</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end zxly_nav -->
+        <div class="bg_bar"></div>
+         <div class="about_txt">
+            <p class="about_tit_wrap"><span class="about_tit">招贤纳士</span></p>
+            <p class="about_para">我们紧跟互联网的发展趋势，我们全力应用大数据的信息技术，我们坚信高素质人才的核心价值。我们在找你，一个拥抱互联网，以激情迎战变化的挑战者！一个喜欢和高智商团队一同工作，不甘平庸的有志青年！一个期待自由开放的文化的新新人类！一个坚韧顽强目标明确的独立人！来吧，让我们“在一起，走更远”</p>
+            <p class="about_headline">室内设计师</p>
+            <p class="about_para">一、岗位职责：</p>
+            <p class="about_para">1、设计制作平面物料，整理修改建议，及时修改定稿；</p>
+            <p class="about_para">2、对定稿的设计源文件、拍摄的产品图片，相关有用的图片进行归档整理；</p>
+            <p class="about_para">3、负责印刷制作工艺、尺寸、材料上的制定；跟进招标流程；</p>
+            <p class="about_para">4、与有需求的办事处负责人沟通，明确设计要求。</p>
+            <p class="about_para">二、任职要求：</p>
+            <p class="about_para">1、大专以上学历，平面设计、美术、策划、广告等专业；</p>
+            <p class="about_para">2、2年以上平面设计经验工作经验；</p>
+            <p class="about_para">3、熟练的使用ps、coreldrew、AI等平面设计软件；</p>
+            <p class="about_para">三、福利待遇：</p>
+            <p class="about_para">1、家住较远者，公司免费提供住宿；公寓内配备图书室、健身房、篮球场、羽毛球场等娱乐设施；余姚市区上下班均有班车接送；</p>
+            <p class="about_para">2、缴纳社会保险，定期安排职工体检；</p>
+            <p class="about_para">3、公司发放生活用品、生日礼品，传统节日发放购物券或实物年货；</p>
+            <p class="about_para">4、公司内建有员工食堂，并提供餐补；公司不定期组织户外拓展、旅游等活动，丰富员工业余生活</p>
+            <p class="about_headline">实施工程师</p>
+            <p class="about_para">一、岗位职责：</p>
+            <p class="about_para">1、负责网站推广；</p>
+            <p class="about_para">2、提升店铺的曝光率、品牌知名度、维护粉丝群、活跃会员；</p>
+            <p class="about_para">3、定期对推广效果进行跟踪，评估，并根据分析报表，及时对推广方式进行修正；</p>
+            <p class="about_para">二、任职要求：</p>
+            <p class="about_para">1、大专及以上学历；</p>
+            <p class="about_para">2、熟悉电子商务模式和流程，具备一年以上网络推广工作经验者优先，优秀应届毕业生亦可；</p>
+            <p class="about_para">3、敏锐的市场洞察力，分析能力及创新思维能力；</p>
+            <p class="about_para">4、具备良好的职业道德</p>
+            <p class="about_para">三、福利待遇：</p>
+            <p class="about_para">1、家住较远者，公司免费提供住宿；公寓内配备图书室、健身房、篮球场、羽毛球场等娱乐设施；余姚市区上下班均有班车接送；</p>
+            <p class="about_para">2、缴纳社会保险，定期安排职工体检；</p>
+            <p class="about_para">3、公司发放生活用品、生日礼品，传统节日发放购物券或实物年货；</p>
+            <p class="about_para">4、公司内建有员工食堂，并提供餐补；公司不定期组织户外拓展、旅游等活动，丰富员工业余生活</p>
+            <p class="about_headline">采购员</p>
+            <p class="about_para">一、岗位职责：</p>
+            <p class="about_para">1、负责O2O整体品牌战略和各终端产品的市场推广策略；</p>
+            <p class="about_para">2、通过线上线下达成品牌及产品推广目标；</p>
+            <p class="about_para">3、根据业务发展、用户需求和市场研究情况，参与制定公司O2O产品的市场发展战略以及市场发展目标；</p>
+            <p class="about_para">4、拓展公司的市场策略，把握公司在行业中的发展方向，完成公司在行业中的市场定位和市场机会分析，及时提供市场反馈</p>
+            <p class="about_para">5、建立并管理O2O的市场招商团队，并完成年度招商目标</p>
+            <p class="about_para">6、组织和实施各类大型市场招商活动</p>
+            <p class="about_para">二、任职要求：</p>
+            <p class="about_para">1、全日制本科以上学历，10年以上市场领域工作经验；</p>
+            <p class="about_para">2、对互联网的营销方式、品牌推广有深厚的积累和独立见解，粉丝营销、饥饿营销、社区运营等相关互联网的市场推广方式；</p>
+            <p class="about_para">3、精通互联网市场营销，熟悉各类媒体运作方式，具有新媒体的相关从业经验；</p>
+            <p class="about_para">4、熟悉常用的互联网/移动营销和推广模式，对O2O产品推广有深刻的理解，了解互联网或无线互联网的产品发展方向及渠道战略；</p>
+            <p class="about_para">5、具有敏锐的商业和市场意识，具备很强的策划能力，极强的工作执行力、具有优秀的资源整合能力和业务推进能力；</p>
+            <p class="about_para">6、善于沟通、思维灵活，执行力强，合作意识强</p>
+            <p class="about_para">7、有BAT或OTA平台市场推广和招商经验优先</p>
+            <p class="about_para">三、福利待遇：</p>
+            <p class="about_para">1、家住较远者，公司免费提供住宿；公寓内配备图书室、健身房、篮球场、羽毛球场等娱乐设施；余姚市区上下班均有班车接送；</p>
+            <p class="about_para">2、缴纳社会保险，定期安排职工体检；</p>
+            <p class="about_para">3、公司发放生活用品、生日礼品，传统节日发放购物券或实物年货；</p>
+            <p class="about_para">4、公司内建有员工食堂，并提供餐补；公司不定期组织户外拓展、旅游等活动，丰富员工业余生活</p>
+        </div>
+       
+        <!-- footer -->
+        <p class="footer">Copyright © 2017 www.jiubujiang.com.cn All Rights Reserved</p>
+        <!-- end footer -->
+    </div>
+    <!-- end content -->
+    <!-- 底部菜单 -->
+    <ul class="nav_bar clear">
+        <li>
+            <a href="index.html">
+                <p class="n_pic"><i class="iconfont">&#xe61c;</i></p>
+                <p class="n_txt">首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <p class="n_pic"><i class="iconfont">&#xe622;</i></p>
+                <p class="n_txt">网上商城</p>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <p class="n_pic"><i class="iconfont">&#xe698;</i></p>
+                <p class="n_txt">服务中心</p>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <p class="n_pic"><i class="iconfont">&#xe673;</i></p>
+                <p class="n_txt">关于我们</p>
+            </a>
+        </li>
+    </ul>
+    <!-- end 底部菜单 -->
+    <script src="js/amazeui.min.js"></script>
+</body>
+
+</html>

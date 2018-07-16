@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link href="css/amazeui.min.css" rel="stylesheet">
+    <title>酒埠江概况</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&amp;v=1.4&amp;services=true"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=1.4&amp;ak=&amp;services=true&amp;t=20130716024058"></script>
+    <script>
+    window.onload = function() {
+        var oBtn = document.getElementById("btn");
+        var oDiv = document.getElementById("nav_wrap");
+        var flag = 1;
+
+        oBtn.onclick = function() {
+            if (flag) {
+                oDiv.style.display = "block";
+                oDiv.onclick = function() {
+                    this.style.display = "none";
+                }
+            } else {
+                oDiv.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="index.html" class="back"><i class="iconfont">&#xe63c;</i></a>
+        <p class="h_tit">酒埠江旅游区</p>
+        <a class="iconfont menu" href="javascript:;" id="btn">&#xe696;</a>
+    </div>
+    <!-- end header -->
+   <!-- 下拉菜单 -->
+   <div class="nav_wrap" id="nav_wrap" style="display:none;">
+    <ul class="nav">
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont">&#xe696;</i>
+                <span>导航</span>
+            </a>
+        </li>
+        <li>
+            <a href="jbjgk.html">
+                <i class="iconfont">&#xe606;</i>
+                <span>酒埠江旅游区</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqzx.html">
+                <i class="iconfont">&#xe69e;</i>
+                <span>景区新闻</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqfg.html">
+                <i class="iconfont">&#xe73b;</i>
+                <span>景区风光</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqsp.html">
+                <i class="iconfont">&#xe647;</i>
+                <span>景区视频</span>
+            </a>
+        </li>
+        <li>
+            <a href="whcs.html">
+                <i class="iconfont">&#xe63f;</i>
+                <span>景区文化</span>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <i class="iconfont">&#xe622;</i>
+                <span>网上商城</span>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <i class="iconfont">&#xe698;</i>
+                <span>服务中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <i class="iconfont">&#xe673;</i>
+                <span>关于我们</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- end 下拉菜单 -->
+    <!-- content -->
+    <div class="content">
+        <!-- banner -->
+        <img src="img/jbjgk_banner.png" class="banner"/>
+        <!-- end banner -->
+        
+        <!-- jqwh_nav -->
+        <div class="jqwh_nav_wrap">
+            <ul class="jqwh_nav">
+                <li>
+                    <a class="jqwh_active" href="jbjgk.html">酒埠江概况</a>
+                </li>
+                <li>
+                    <a href="jxhgk.html">酒仙湖概况</a>
+                </li>
+                <li>
+                    <a href="jqjd.html">景区景点</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end jqwh_nav -->
+        <div class="bg_bar"></div>
+        
+
+        <div class="jbjgk_about_txt">
+            <p class="about_tit_wrap"><span class="about_tit">景区介绍</span></p>
+            <p class="about_para">酒埠江国家地质公园于2005年12月由国家国土资源部批准建立，经过三年的建设，于2008年12月29日上午开园，位于湖南省株洲市攸县东部、湘赣交界地带，总面积193平方公里，分布有六大景区，五大类，80多处主要地质遗迹景观。</p>
+            <p class="about_tit_wrap"><span class="about_tit">景区地址</span></p>
+            <div id="container" style="width:100%;height:6.6rem;"></div>
+            <p class="about_tit_wrap"><span class="about_tit">景点介绍</span></p>
+            <div class="jbjgk_ctn">
+                <ul class="jbjgk_list">
+                    <li>
+                        <a href="#">
+                            <img src="img/jbjgk_pic01.png" class="jbjgk_pic"/>
+                            <div class="jbjgk_right">
+                                <p class="jbjgk_li_tit">酒埠江国家地质博物馆</p>
+                                <p class="jbjgk_li_txt">根据2005年9月国土资源部的批复,酒埠江国家地质公园的正式开园必须</p>
+                            </div>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="#">
+                            <img src="img/jbjgk_pic02.png" class="jbjgk_pic"/>
+                            <div class="jbjgk_right">
+                                <p class="jbjgk_li_tit">酒埠江国家地质博物馆</p>
+                                <p class="jbjgk_li_txt">又称高山黄桃，以香、脆、甜而闻名于世，为国家地理标志保护产品。生长于湖南省炎陵县平均海拔400-1400米的</p>
+                            </div>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="#">
+                            <img src="img/jbjgk_pic03.png" class="jbjgk_pic"/>
+                            <div class="jbjgk_right">
+                                <p class="jbjgk_li_tit">酒埠江国家地质博物馆</p>
+                                <p class="jbjgk_li_txt">又称高山黄桃，以香、脆、甜而闻名于世，为国家地理标志保护产品。生长于湖南省炎陵县平均海拔400-1400米的</p>
+                            </div>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="#">
+                            <img src="img/jbjgk_pic04.png" class="jbjgk_pic"/>
+                            <div class="jbjgk_right">
+                                <p class="jbjgk_li_tit">酒埠江国家地质博物馆</p>
+                                <p class="jbjgk_li_txt">又称高山黄桃，以香、脆、甜而闻名于世，为国家地理标志保护产品。生长于湖南省炎陵县平均海拔400-1400米的</p>
+                            </div>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="#">
+                            <img src="img/jbjgk_pic05.png" class="jbjgk_pic"/>
+                            <div class="jbjgk_right">
+                                <p class="jbjgk_li_tit">酒埠江国家地质博物馆</p>
+                                <p class="jbjgk_li_txt">又称高山黄桃，以香、脆、甜而闻名于世，为国家地理标志保护产品。生长于湖南省炎陵县平均海拔400-1400米的</p>
+                            </div>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+                <p class="about_tit_wrap"><span class="about_tit">景区风光</span></p>
+                <!--轮播图 -->
+                <div class="am-slider am-slider-a1 show_pic" data-am-slider='{"directionNav":false}' data-am-widget="slider">
+                    <ul class="am-slides">
+                        <li>
+                            <img src="img/01.png" />
+                        </li>
+                        <li>
+                            <img src="img/02.png" />
+                        </li>
+                        <li>
+                            <img src="img/03.png" />
+                        </li>
+                        <li>
+                            <img src="img/01.png" />
+                        </li>
+                    </ul>
+                </div>
+            <!-- end 轮播图-->
+            </div>
+        </div>
+
+        <!-- footer -->
+        <p class="footer">Copyright © 2017 www.jiubujiang.com.cn All Rights Reserved</p>
+        <!-- end footer -->
+    </div>
+    <!-- end content -->
+
+    <!-- 底部菜单 -->
+    <ul class="nav_bar clear">
+        <li>
+            <a href="index.html">
+                <p class="n_pic"><i class="iconfont">&#xe61c;</i></p>
+                <p class="n_txt">首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <p class="n_pic"><i class="iconfont">&#xe622;</i></p>
+                <p class="n_txt">网上商城</p>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <p class="n_pic"><i class="iconfont">&#xe698;</i></p>
+                <p class="n_txt">服务中心</p>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <p class="n_pic"><i class="iconfont">&#xe673;</i></p>
+                <p class="n_txt">关于我们</p>
+            </a>
+        </li>
+    </ul>
+    <!-- end 底部菜单 -->
+    <script src="js/amazeui.min.js"></script>
+    <script src="js/map.js"></script> 
+</body>
+
+</html>

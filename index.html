@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link href="css/amazeui.min.css" rel="stylesheet">
+    <title>湖南酒仙湖生态旅游开发有限公司</title>
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+    window.onload = function() {
+        var oBtn = document.getElementById("btn");
+        var oDiv = document.getElementById("nav_wrap");
+        var flag = 1;
+
+        oBtn.onclick = function() {
+            if (flag) {
+                oDiv.style.display = "block";
+                oDiv.onclick = function() {
+                    this.style.display = "none";
+                }
+            } else {
+                oDiv.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <img class="logo" src="img/logo.png" />
+        <a class="iconfont menu" href="javascript:;" id="btn">&#xe696;</a>
+    </div>
+    <!-- end header -->
+    <!-- 下拉菜单 -->
+    <div class="nav_wrap" id="nav_wrap" style="display:none;">
+        <ul class="nav">
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe696;</i>
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="jbjgk.html">
+                    <i class="iconfont">&#xe606;</i>
+                    <span>酒埠江旅游区</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqzx.html">
+                    <i class="iconfont">&#xe69e;</i>
+                    <span>景区新闻</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqfg.html">
+                    <i class="iconfont">&#xe73b;</i>
+                    <span>景区风光</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqsp.html">
+                    <i class="iconfont">&#xe647;</i>
+                    <span>景区视频</span>
+                </a>
+            </li>
+            <li>
+                <a href="whcs.html">
+                    <i class="iconfont">&#xe63f;</i>
+                    <span>景区文化</span>
+                </a>
+            </li>
+            <li>
+                <a href="wssc.html">
+                    <i class="iconfont">&#xe622;</i>
+                    <span>网上商城</span>
+                </a>
+            </li>
+            <li>
+                <a href="zxly.html">
+                    <i class="iconfont">&#xe698;</i>
+                    <span>服务中心</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="iconfont">&#xe673;</i>
+                    <span>关于我们</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- end 下拉菜单 -->
+    <!-- content -->
+    <div class="content">
+        <!--轮播图 -->
+        <div class="am-slider am-slider-a1 show_pic" data-am-slider='{"directionNav":false}' data-am-widget="slider">
+            <ul class="am-slides">
+                <li>
+                    <img src="img/01.png" />
+                </li>
+                <li>
+                    <img src="img/02.png" />
+                </li>
+                <li>
+                    <img src="img/03.png" />
+                </li>
+                <li>
+                    <img src="img/01.png" />
+                </li>
+            </ul>
+        </div>
+        <!-- end 轮播图-->
+
+        <!-- 水平导航 -->
+        <ul class="bar clear">
+            <li>
+                <a href="jqzx.html">
+                    <img alt="01" src="img/bar01.png"/>
+                    <span>景区新闻</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqfg.html">
+                    <img alt="01" src="img/bar02.png"/>
+                    <span>景区风光</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqsp.html">
+                    <img alt="01" src="img/bar03.png"/>
+                    <span>景区视频</span>
+                </a>
+            </li>
+            <li>
+                <a href="whcs.html">
+                    <img alt="01" src="img/bar04.png"/>
+                    <span>景区文化</span>
+                </a>
+            </li>
+        </ul>
+        <!-- end 水平导航 -->
+
+        <!-- 酒埠江旅游区 -->
+        <div class="jiubujiang">
+            <div class="jbj_txt">
+                <p class="jbj_main_title">酒埠江旅游区</p>
+                <p class="jbj_sub_title">——<span>JIUBUJIANG</span>——</p>
+            </div>
+            <div class="am-slider am-slider-default tre_pics" data-am-slider='{"animation":"slide","slideshow":false}' data-am-widget="slider">
+                <ul class="am-slides">
+                    <li>
+                        <img src="img/jbj01.png" />
+                        <div class="am-slider-desc">
+                            酒仙湖美景欣赏01
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/jbj02.png" />
+                        <div class="am-slider-desc">
+                            酒仙湖美景欣赏02
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/jbj03.png" />
+                        <div class="am-slider-desc">
+                            酒仙湖美景欣赏03
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/jbj02.png" />
+                        <div class="am-slider-desc">
+                            酒仙湖美景欣赏04
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/jbj03.png" />
+                        <div class="am-slider-desc">
+                            酒仙湖美景欣赏05
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end 酒埠江旅游区 -->
+
+        <!-- 景区文化 -->
+        <div class="culture">
+            <div class="cul_txt">
+                <p class="cul_main_title">景区文化</p>
+                <p class="cul_sub_title">——<span>CULTURE</span>——</p>
+            </div>
+            <ul class="intro">
+                <li>
+                    <a href="whcs.html">
+                        <img src="img/cul01.png" class="cul_img"/>
+                        <p class="intro_main_tit">文化传说</p>
+                        <p class="intro_sub_tit">弘扬中国传统文化</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="msfq.html">
+                        <img src="img/cul02.png" class="cul_img"/>
+                        <p class="intro_main_tit">民俗风情</p>
+                        <p class="intro_sub_tit">弘扬中国传统文化</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="mrzp.html">
+                        <img src="img/cul03.png" class="cul_img"/>
+                        <p class="intro_main_tit">文化传说</p>
+                        <p class="intro_sub_tit">弘扬中国传统文化</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- end 景区文化 -->
+
+        <!-- 景区新闻 -->
+        <div class="news">
+            <div class="news_txt">
+                <p class="news_main_tit">景区新闻</p>
+                <p class="news_sub_tit">——<span>NEWS</span>——</p>
+            </div>
+            <ul class="news_list">
+                <li>
+                    <a href="jqzx_detail.html">
+                        <img src="img/news01.png" alt="pic01" class="news_pic"/>
+                        <div class="news_list_right">
+                            <p class="news_tit">酒仙湖景区第一届皮划艇趣味大比赛</p>
+                            <p class="news_date">2018-06-20</p>
+                            <p class="news_more">MORE</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="jqzx_detail.html">
+                        <img src="img/news01.png" alt="pic01" class="news_pic"/>
+                        <div class="news_list_right">
+                            <p class="news_tit">酒仙湖景区第一届皮划艇趣味大比赛</p>
+                            <p class="news_date">2018-06-20</p>
+                            <p class="news_more">MORE</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="jqzx_detail.html">
+                        <img src="img/news01.png" alt="pic01" class="news_pic"/>
+                        <div class="news_list_right">
+                            <p class="news_tit">酒仙湖景区第一届皮划艇趣味大比赛</p>
+                            <p class="news_date">2018-06-20</p>
+                            <p class="news_more">MORE</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="jqzx_detail.html">
+                        <img src="img/news01.png" alt="pic01" class="news_pic"/>
+                        <div class="news_list_right">
+                            <p class="news_tit">酒仙湖景区第一届皮划艇趣味大比赛</p>
+                            <p class="news_date">2018-06-20</p>
+                            <p class="news_more">MORE</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="jqzx_detail.html">
+                        <img src="img/news01.png" alt="pic01" class="news_pic"/>
+                        <div class="news_list_right">
+                            <p class="news_tit">酒仙湖景区第一届皮划艇趣味大比赛</p>
+                            <p class="news_date">2018-06-20</p>
+                            <p class="news_more">MORE</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="more_wrap">
+                <a href="jqzx.html" class="more">更多+</a>
+            </div>
+        </div>
+        <!-- end 景区新闻 -->
+
+        <!-- 品牌故事 -->
+        <div class="pinpai">
+            <div class="pinpai_txt">
+                <p class="pinpai_main_tit">品牌故事</p>
+                <p class="pinpai_sub_tit">——<span>BRAND STORY</span>——</p>
+            </div>
+            <div class="p_wrap">
+                <p class="p_tit">1. 树立品牌意识，确定品牌定位。</p>
+                <p class="p_ctn">酒仙湖景区里优美的环境，碧波的湖水，枝繁叶茂的树林，这些都是它最宝贵的资源。虽然湖南地区有不少的类似景点，但是像酒仙湖水质与环境保护的这么好的却少之又少，因此将生态环境作为中心创建一个品牌。</p>
+                <p class="p_tit">2.开发个性化的新产品。</p>
+                <p class="p_ctn">酒仙湖景区从新产品开发入手，通过市场调研了解旅游者想要达到的娱乐效果，根据市场细分，根据不同的消费群体，量身设计个性化的娱乐项目，吸引更多的旅客。利用当地的特色开设具有地方特色的项目，根据当地的风土人情改变酒店、度假区的风格特点......</p>
+            </div>
+        </div>
+        <!-- end 品牌故事 -->
+
+        <!-- footer -->
+        <p class="footer">Copyright © 2017 www.jiubujiang.com.cn All Rights Reserved</p>
+        <!-- end footer -->
+    </div>
+    <!-- end content -->
+
+    <!-- 底部菜单 -->
+    <ul class="nav_bar clear">
+        <li>
+            <a href="index.html">
+                <p class="n_pic"><i class="iconfont">&#xe61c;</i></p>
+                <p class="n_txt">首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <p class="n_pic"><i class="iconfont">&#xe622;</i></p>
+                <p class="n_txt">网上商城</p>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <p class="n_pic"><i class="iconfont">&#xe698;</i></p>
+                <p class="n_txt">服务中心</p>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <p class="n_pic"><i class="iconfont">&#xe673;</i></p>
+                <p class="n_txt">关于我们</p>
+            </a>
+        </li>
+    </ul>
+    <!-- end 底部菜单 -->
+    <script src="js/amazeui.min.js"></script>
+</body>
+
+</html>

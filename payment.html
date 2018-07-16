@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link href="css/amazeui.min.css" rel="stylesheet">
+    <title>景区门票</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/tab.js"></script>
+    <script>
+    window.onload = function() {
+        var oBtn = document.getElementById("btn");
+        var oDiv = document.getElementById("nav_wrap");
+        var flag = 1;
+
+        oBtn.onclick = function() {
+            if (flag) {
+                oDiv.style.display = "block";
+                oDiv.onclick = function() {
+                    this.style.display = "none";
+                }
+            } else {
+                oDiv.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="jqmp_dg.html" class="back"><i class="iconfont">&#xe63c;</i></a>
+        <p class="h_tit">景区门票</p>
+        <a class="iconfont menu" href="javascript:;" id="btn">&#xe696;</a>
+    </div>
+    <!-- end header -->
+    <!-- 下拉菜单 -->
+   <div class="nav_wrap" id="nav_wrap" style="display:none;">
+    <ul class="nav">
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont">&#xe696;</i>
+                <span>导航</span>
+            </a>
+        </li>
+        <li>
+            <a href="jbjgk.html">
+                <i class="iconfont">&#xe606;</i>
+                <span>酒埠江旅游区</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqzx.html">
+                <i class="iconfont">&#xe69e;</i>
+                <span>景区新闻</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqfg.html">
+                <i class="iconfont">&#xe73b;</i>
+                <span>景区风光</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqsp.html">
+                <i class="iconfont">&#xe647;</i>
+                <span>景区视频</span>
+            </a>
+        </li>
+        <li>
+            <a href="whcs.html">
+                <i class="iconfont">&#xe63f;</i>
+                <span>景区文化</span>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <i class="iconfont">&#xe622;</i>
+                <span>网上商城</span>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <i class="iconfont">&#xe698;</i>
+                <span>服务中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <i class="iconfont">&#xe673;</i>
+                <span>关于我们</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- end 下拉菜单 -->
+    <!-- content -->
+    <div class="gpxz_content">
+        <div class="box">
+            <div class="box_mes_wrap">
+                <p class="box_tit">酒埠江景区成人票</p>
+                <p class="box_tips">使用方法：凭本人身份证到指定地点换票入园</p>
+                <p class="box_mes">
+                    <a href="gpxz.html" class="box_left">购票须知>></a>
+                    <span class="box_right">￥<span class="box_price">168.00</span>/张</span>
+                </p>
+            </div>
+            <div class="bg_bar"></div>
+            <form class="box_submit">
+                <p class="sub_date">
+                    <span class="sub_tit">出行日期</span>
+                    <input type="text" class="sub_int"/>
+                </p>
+                <p class="sub_num">
+                    <span class="sub_tit">数量</span>
+                    <span class="reduce">-</span>
+                    <span class="count">1</span>
+                    <span class="add">+</span>
+                </p>
+                <div class="bg_bar"></div>
+                <p class="sub_date">
+                    <span class="sub_tit">取票人</span>
+                    <input type="text" class="sub_int"/>
+                </p>
+                <p class="sub_date">
+                    <span class="sub_tit">手机号码</span>
+                    <input type="text" class="sub_int"/>
+                </p>
+                <p class="sub_date">
+                    <span class="sub_tit">身份证号码</span>
+                    <input type="text" class="sub_int"/>
+                </p>
+                <div class="bg_bar03"></div>
+                <p class="zfb">支付宝支付</p>
+                <p class="pay_sub">
+                    <span class="pay_left">订单金额：168.00</span>
+                    <a href="#" class="pay_right">在线支付</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <!-- end content -->
+    <script src="js/amazeui.min.js"></script>
+</body>
+
+</html>

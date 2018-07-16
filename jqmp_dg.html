@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link href="css/amazeui.min.css" rel="stylesheet">
+    <title>景区门票</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/tab.js"></script>
+    <script>
+    window.onload = function() {
+        var oBtn = document.getElementById("btn");
+        var oDiv = document.getElementById("nav_wrap");
+        var flag = 1;
+
+        oBtn.onclick = function() {
+            if (flag) {
+                oDiv.style.display = "block";
+                oDiv.onclick = function() {
+                    this.style.display = "none";
+                }
+            } else {
+                oDiv.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="jqmp.html" class="back"><i class="iconfont">&#xe63c;</i></a>
+        <p class="h_tit">景区门票</p>
+        <a class="iconfont menu" href="javascript:;" id="btn">&#xe696;</a>
+    </div>
+    <!-- end header -->
+    <!-- 下拉菜单 -->
+   <div class="nav_wrap" id="nav_wrap" style="display:none;">
+    <ul class="nav">
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont">&#xe696;</i>
+                <span>导航</span>
+            </a>
+        </li>
+        <li>
+            <a href="jbjgk.html">
+                <i class="iconfont">&#xe606;</i>
+                <span>酒埠江旅游区</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqzx.html">
+                <i class="iconfont">&#xe69e;</i>
+                <span>景区新闻</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqfg.html">
+                <i class="iconfont">&#xe73b;</i>
+                <span>景区风光</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqsp.html">
+                <i class="iconfont">&#xe647;</i>
+                <span>景区视频</span>
+            </a>
+        </li>
+        <li>
+            <a href="whcs.html">
+                <i class="iconfont">&#xe63f;</i>
+                <span>景区文化</span>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <i class="iconfont">&#xe622;</i>
+                <span>网上商城</span>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <i class="iconfont">&#xe698;</i>
+                <span>服务中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <i class="iconfont">&#xe673;</i>
+                <span>关于我们</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- end 下拉菜单 -->
+    <!-- content -->
+    <div class="content">
+        <!--轮播图 -->
+        <div class="am-slider am-slider-a1 show_pic" data-am-slider='{"directionNav":false}' data-am-widget="slider">
+            <ul class="am-slides">
+                <li>
+                    <img src="img/wssc01.png" />
+                </li>
+                <li>
+                    <img src="img/02.png" />
+                </li>
+                <li>
+                    <img src="img/03.png" />
+                </li>
+                <li>
+                    <img src="img/01.png" />
+                </li>
+            </ul>
+        </div>
+        <!-- end 轮播图-->
+        
+        <div class="jqmp_dg_intro">
+            <p class="jqmp_dg_tit">酒仙湖风景区门票</p>
+            <p class="jqmp_dg_xq">
+                <a href="jqmp_dg_detail.html">
+                    <span class="jqmp_xq_left">AAAA景区</span>
+                    <span class="jqmp_xq_right">详情 ></span>
+                </a>
+            </p>
+            <p class="jqmp_dg_adr">
+                <a href="jqmp_dg_map.html">
+                    <span class="jqmp_adr_left">湖南省株洲市攸县酒埠江镇</span>
+                    <span class="jqmp_adr_right"><i class="iconfont">&#xe619;</i>查看地图</span>
+                </a>
+            </p>
+        </div>
+        <div class="bg_bar"></div>
+        <!-- tab -->
+        <div class="tab_wrap">
+            <ul id="tabs" class="tabs clear">
+                <li class="current">
+                    <a href="javascript:;" title="tab1">景点票型</a>
+                </li>
+                <li>
+                    <a href="javascript:;" title="tab2">景点介绍</a>
+                </li>
+                <li>
+                    <a href="javascript:;" title="tab3">预定须知</a>
+                </li>
+            </ul>
+
+            <div id="tab_ctn" class="tab_ctn">
+                <div id="tab1" class="item show">
+                    <ul class="ticket_wrap clear">
+                        <li class="ticket">成人票</li>
+                        <li class="old_price">￥168</li>
+                        <li class="new_price"><span>￥88</span> 起</li>
+                        <li class="ticket_intro"><a href="#">票型说明</a></li>
+                        <li class="ticket_yudin"><a href="payment.html">立即预定</a></li>
+                    </ul>
+                    <ul class="ticket_wrap clear">
+                        <li class="ticket">儿童票</li>
+                        <li class="old_price">￥168</li>
+                        <li class="new_price"><span>￥88</span> 起</li>
+                        <li class="ticket_intro"><a href="#">票型说明</a></li>
+                        <li class="ticket_yudin"><a href="#">立即预定</a></li>
+                    </ul>
+                </div>
+                <div id="tab2" class="item">
+                    <p class="tab_para">酒埠江国家地质公园位于攸县东部，地处湘赣交界的罗霄山脉中段西侧 。湘东铁路和106国道从公园西侧通过。攸县酒埠江地质公园距长沙约170公里，总面积232平方公里，有120多个中型溶洞和天坑。</p>
+                    <p class="tab_para">公园森林覆盖率达96%，保持着近乎原始的生态环境，动植物资源丰富，是中国亚热带复杂生态系统和重要生物基因库之一。公园以溶洞、地下河、天坑、峡谷、天生桥、瀑布、湖酒埠江国家地质公园酒埠江国家地质公园泊、古生物化石等地质遗迹景观为主体，辅以丰富的生态景观和人文景观，集科学价值和美学价值于一体。</p>
+                </div>
+                <div id="tab3" class="item">
+                    <p class="tab_para">优待政策</p>
+                    <p class="tab_para">免费人群： 对身高1.3米(含1.3米)以下的儿童实行免票。</p> 
+                    <p class="tab_para">优惠人群：</p>
+                    <p class="tab_para">a、对现役士兵、残疾人和年满70周岁以上（含70周岁）老年人凭有效证件实行110元/人次优惠票价。</p>
+                    <p class="tab_para">b、对未成年人、24周岁（不含24周岁）以下的全日制大学本科及以下学历的学生、60周岁以上（含60周岁）70周岁以下（不含70周岁）的老年人、现役军人(军官、文职人员、士官、不含现役士兵)、军队离退休干部、烈士直系家属、持有民政部门颁发的《城乡居民最低生活保障金领取证》的人员，均凭有效证件享受155元/人次的优惠票价。</p>
+                    <p class="tab_para">c、山顶吊椅索道执行单程挂牌价25元/人次。对未成年人、24周岁以下（不含24周岁）的全日制大学本科及以下学历的学生、60周岁以上（含60周岁）老年人、现役军人、残疾人、军队离退休干部、烈士直系家属、持民政部门颁发的《城乡居民最低生活保障金领取证》人员，均凭有效证件享受15元/人次的优惠票价。 以上优惠人群均持相应的有效证件，前往景区现场购票。</p>
+                </div>
+            </div>
+        </div>
+        <!-- end tab -->
+        <div class="bg_bar02"></div>
+        <!-- 更多推荐 -->
+        <div class="dg_jqmp">
+            <p class="dg_more">更多推荐</p>
+            <ul class="dg_jqmp_list">
+                <li>
+                    <a href="#">
+                        <img src="img/dg_jqmp_li01.png" class="dg_jqmp_pic"/>
+                        <div class="dg_txt_wrap">
+                            <p class="dg_jqmp_tit">酒埠江景区宝宁寺门票</p>
+                            <p class="dg_jqmp_price_wrap">
+                                <span class="dg_price">￥168.00</span>
+                                起
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/dg_jqmp_li02.png" class="dg_jqmp_pic"/>
+                        <div class="dg_txt_wrap">
+                            <p class="dg_jqmp_tit">酒埠江景区宝宁寺门票</p>
+                            <p class="dg_jqmp_price_wrap">
+                                <span class="dg_price">￥168.00</span>起
+                                <!-- <span class="dg_buy">立即购买</span> -->
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/dg_jqmp_li03.png" class="dg_jqmp_pic"/>
+                        <div class="dg_txt_wrap">
+                            <p class="dg_jqmp_tit">酒埠江景区宝宁寺门票</p>
+                            <p class="dg_jqmp_price_wrap">
+                                <span class="dg_price">￥168.00</span>起
+                                <!-- <span class="dg_buy">立即购买</span> -->
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/dg_jqmp_li04.png" class="dg_jqmp_pic"/>
+                        <div class="dg_txt_wrap">
+                            <p class="dg_jqmp_tit">酒埠江景区宝宁寺门票</p>
+                            <p class="dg_jqmp_price_wrap">
+                                <span class="dg_price">￥168.00</span>起
+                                <!-- <span class="dg_buy">立即购买</span> -->
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--end 更多推荐 -->
+    </div>
+    <!-- end content -->
+
+    <!-- 票型说明 -->
+    <div class="ticket_state_wrap" style="display:none;">
+        <div class="ticket_state">
+            <p class="ticket_state_tit">成人票</p>
+            <p class="ticket_state_txt">·门票费</p>
+            <p class="ticket_state_tit">预定须知</p>
+            <p class="ticket_state_txt">·1、携带本人身份证入园</p>
+            <p class="ticket_state_txt">·2、提前1小时预定</p>
+            <p class="ticket_state_tit">适用人群</p>
+            <p class="ticket_state_txt">·18周岁以上</p>
+            <p class="ticket_state_tit">使用须知</p>
+            <p class="ticket_state_txt">·1、携带本人身份证</p>
+            <p class="ticket_state_txt">·2、扫描手机短信二维码或刷身份证入园</p>
+            <p class="ticket_state_tit">退改规则</p>
+            <p class="ticket_state_txt">·过期可退；未使用可退</p>
+            <p class="ticket_state_tit">发票说明</p>
+            <p class="ticket_state_txt">·否</p>
+            <p class="reserve_wrap">
+                <span class="reserve_price">￥168.00</span>
+                <span class="reserve"><a href="http://www.baidu.com">立即预定</a></span>
+            </p>
+            <a href="javascript:;" class="dg_close"><i class="iconfont">&#xe635;</i></a>
+        </div>
+    </div>
+    <!-- end 票型说明 -->
+
+    <!-- 底部菜单 -->
+    <ul class="nav_bar clear">
+        <li>
+            <a href="index.html">
+                <p class="n_pic"><i class="iconfont">&#xe61c;</i></p>
+                <p class="n_txt">首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <p class="n_pic"><i class="iconfont">&#xe622;</i></p>
+                <p class="n_txt">网上商城</p>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <p class="n_pic"><i class="iconfont">&#xe698;</i></p>
+                <p class="n_txt">服务中心</p>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <p class="n_pic"><i class="iconfont">&#xe673;</i></p>
+                <p class="n_txt">关于我们</p>
+            </a>
+        </li>
+    </ul>
+    <!-- end 底部菜单 -->
+    <script src="js/amazeui.min.js"></script>
+    <script src="js/reserve.js"></script>
+</body>
+
+</html>

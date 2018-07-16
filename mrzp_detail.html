@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link href="css/amazeui.min.css" rel="stylesheet">
+    <title>名人作品</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+    window.onload = function() {
+        var oBtn = document.getElementById("btn");
+        var oDiv = document.getElementById("nav_wrap");
+        var flag = 1;
+
+        oBtn.onclick = function() {
+            if (flag) {
+                oDiv.style.display = "block";
+                oDiv.onclick = function() {
+                    this.style.display = "none";
+                }
+            } else {
+                oDiv.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="mrzp.html" class="back"><i class="iconfont">&#xe63c;</i></a>
+        <p class="h_tit">名人作品</p>
+        <a class="iconfont menu" href="javascript:;" id="btn">&#xe696;</a>
+    </div>
+    <!-- end header -->
+   <!-- 下拉菜单 -->
+   <div class="nav_wrap" id="nav_wrap" style="display:none;">
+    <ul class="nav">
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont">&#xe696;</i>
+                <span>导航</span>
+            </a>
+        </li>
+        <li>
+            <a href="jbjgk.html">
+                <i class="iconfont">&#xe606;</i>
+                <span>酒埠江旅游区</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqzx.html">
+                <i class="iconfont">&#xe69e;</i>
+                <span>景区新闻</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqfg.html">
+                <i class="iconfont">&#xe73b;</i>
+                <span>景区风光</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqsp.html">
+                <i class="iconfont">&#xe647;</i>
+                <span>景区视频</span>
+            </a>
+        </li>
+        <li>
+            <a href="whcs.html">
+                <i class="iconfont">&#xe63f;</i>
+                <span>景区文化</span>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <i class="iconfont">&#xe622;</i>
+                <span>网上商城</span>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <i class="iconfont">&#xe698;</i>
+                <span>服务中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <i class="iconfont">&#xe673;</i>
+                <span>关于我们</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- end 下拉菜单 -->
+    <!-- content -->
+    <div class="content">
+        <div class="det_header_wrap">
+            <p class="det_headline">酒仙湖景区亲子类项目免费整个六月！</p>
+            <p class="det_date_wrap">
+                <span class="det_date"><i class="iconfont">&#xe6c6;</i>2018-06-25 08:30:00</span>
+                <span class="det_view"><i class="iconfont">&#xe61a;</i>100</span>
+            </p>
+        </div>
+        <div class="det_ctn_wrap">
+            <p class="det_para">酒埠江国家地质公园位于攸县东部，地处湘赣交界的罗霄山脉中段西侧。湘东铁路和106国道从公园西侧通过。攸县酒埠江地质公园距长沙约170公里，总面积232平方公里，有120多个中型溶洞和天坑。</p>
+            <img src="img/det_pic01.png" class="det_pic"/>
+            <p class="det_para">公园森林覆盖率达96%，保持着近乎原始的生态环境，动植物资源丰富，是中国亚热带复杂生态系统和重要生物基因库之一。公园以溶洞、地下河、天坑、峡谷、天生桥、瀑布、湖酒埠江国家地质公园酒埠江国家地质公园泊、古生物化石等地质遗迹景观为主体，辅以丰富的生态景观和人文景观，集科学价值和美学价值于一体。</p>
+            <img src="img/det_pic02.png" class="det_pic"/>
+            <p class="det_para">酒埠江标识系统由湖南美景创意标牌标识规划设计，方案设计风格紧扣景区的“自然生态”、“人文历史”、“红色旅游”三大特色，切合“是国一流、湖南第一的地质博物馆”的景区定位，材质、展现形式与景区风貌适度统一，以及和谐的色调搭配，在提升景区品质的同时，让其更具观赏性。</p>
+        </div>
+        <p class="det_prev_next">
+            <a href="#" class="det_prev"><i class="iconfont">&#xe8ef;</i>上一篇</a>
+            <a href="#" class="det_next">下一篇<i class="iconfont">&#xe8f0;</i></a>
+        </p>
+
+        <!-- footer -->
+        <p class="footer">Copyright © 2017 www.jiubujiang.com.cn All Rights Reserved</p>
+        <!-- end footer -->
+    </div>
+    <!-- end content -->
+
+    <!-- 底部菜单 -->
+    <ul class="nav_bar clear">
+        <li>
+            <a href="index.html">
+                <p class="n_pic"><i class="iconfont">&#xe61c;</i></p>
+                <p class="n_txt">首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <p class="n_pic"><i class="iconfont">&#xe622;</i></p>
+                <p class="n_txt">网上商城</p>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <p class="n_pic"><i class="iconfont">&#xe698;</i></p>
+                <p class="n_txt">服务中心</p>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <p class="n_pic"><i class="iconfont">&#xe673;</i></p>
+                <p class="n_txt">关于我们</p>
+            </a>
+        </li>
+    </ul>
+    <!-- end 底部菜单 -->
+    <script src="js/amazeui.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link href="css/amazeui.min.css" rel="stylesheet">
+    <title>关于我们</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+    window.onload = function() {
+        var oBtn = document.getElementById("btn");
+        var oDiv = document.getElementById("nav_wrap");
+        var flag = 1;
+
+        oBtn.onclick = function() {
+            if (flag) {
+                oDiv.style.display = "block";
+                oDiv.onclick = function() {
+                    this.style.display = "none";
+                }
+            } else {
+                oDiv.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="index.html" class="back"><i class="iconfont">&#xe63c;</i></a>
+        <p class="h_tit">关于我们</p>
+        <a class="iconfont menu" href="javascript:;" id="btn">&#xe696;</a>
+    </div>
+    <!-- end header -->
+    <!-- 下拉菜单 -->
+    <div class="nav_wrap" id="nav_wrap" style="display:none;">
+        <ul class="nav">
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe696;</i>
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="jbjgk.html">
+                    <i class="iconfont">&#xe606;</i>
+                    <span>酒埠江旅游区</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqzx.html">
+                    <i class="iconfont">&#xe69e;</i>
+                    <span>景区新闻</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqfg.html">
+                    <i class="iconfont">&#xe73b;</i>
+                    <span>景区风光</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqsp.html">
+                    <i class="iconfont">&#xe647;</i>
+                    <span>景区视频</span>
+                </a>
+            </li>
+            <li>
+                <a href="whcs.html">
+                    <i class="iconfont">&#xe63f;</i>
+                    <span>景区文化</span>
+                </a>
+            </li>
+            <li>
+                <a href="wssc.html">
+                    <i class="iconfont">&#xe622;</i>
+                    <span>网上商城</span>
+                </a>
+            </li>
+            <li>
+                <a href="zxly.html">
+                    <i class="iconfont">&#xe698;</i>
+                    <span>服务中心</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="iconfont">&#xe673;</i>
+                    <span>关于我们</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- end 下拉菜单 -->
+    <!-- content -->
+    <div class="content">
+        <!-- banner -->
+        <img src="img/about_banner.png" class="banner"/>
+        <!-- end banner -->
+
+        <div class="about_txt">
+            <p class="about_tit_wrap"><span class="about_tit">企业理念</span></p>
+            <p class="about_para">2015年11月30日，株洲市城发集团全资子公司——株洲市政建设有限公司与攸县人民政府正式签订了攸县酒埠江生态新镇建设项目PPP合同；2015年12月28日，由双方共同组建的业主单位——湖南酒仙湖生态旅游开发有限公司完成注册。自此，酒埠江旅游开发进入了全新的发展阶段。</p>
+            <p class="about_headline">模式突破</p>
+            <p class="about_para">旅游区的开发、建设、运营由过去的政府主导变成政府与社会资本合作的PPP模式，此举既可减轻财政负担，也有利于实现让市场在资源配置中起决定作用的目标。</p>
+            <p class="about_headline">理念升级</p>
+            <p class="about_para">摈弃观光旅游的传统思路，将酒埠江旅游区打造成省内著名、全国知名的综合性休闲度假目的地。同时它也将成为中国内湖休闲旅游新标杆、中部地区运动探险理想地、长株潭最佳田园风光体验区。</p>
+            <p class="about_headline">空间整合</p>
+            <p class="about_para">以自驾道、慢行道、运动道等多类型道路系统进行串联，结合大尺度景观、服务节点、旅游产品。通过新的游览活动和行程组织，构建非景区化的全域空间网络新结构。形成引擎带动、核心驱动、环线串联的空间格局。</p>
+            <p class="about_headline">产品创新</p>
+            <p class="about_para">在完善“吃住行游购娱”传统旅游六要素的同时，积极创新和培育“商学养闲情奇”等新型旅游要素；运用“旅游+”“互联网+”的理念进行资源整合与创新业态培育，为游客提供更多选择与体验。开发优质资源，丰富产品组合，强化地域特色。</p>
+            <p class="about_headline">旅居共享</p>
+            <p class="about_para">通过增加居住产品类型，满足各类人群的服务需求，同时增加景区内部的居住服务，实现旅居共融的目标。</p>
+            <p class="about_tit_wrap"><span class="about_tit">品牌故事</span></p>
+            <p class="about_headline">1. 树立品牌意识，确定品牌定位。</p>
+            <p class="about_para">酒仙湖景区里优美的环境，碧波的湖水，枝繁叶茂的树林，这些都是它最宝贵的资源。虽然湖南地区有不少的类似景点，但是像酒仙湖水质与环境保护的这么好的却少之又少，因此将生态环境作为中心创建一个品牌。</p>
+            <p class="about_headline">2.开发个性化的新产品。</p>
+            <p class="about_para">酒仙湖景区从新产品开发入手，通过市场调研了解旅游者想要达到的娱乐效果，根据市场细分，根据不同的消费群体，量身设计个性化的娱乐项目，吸引更多的旅客。利用当地的特色开设具有地方特色的项目，根据当地的风土人情改变酒店、度假区的风格特点，形成一种地方特有的旅游氛围。</p>
+            <p class="about_headline">3. 细微处做文章，强调旅游产品的人性化特色。</p>
+            <p class="about_para">旅游与品牌说到底都是在做关系的文章, 旅游服务其实是与品牌建设相通的, 旅游要做的就是统筹资源并把一切细节做好, 品牌真正要做的也就是细节, 把每一个标志、每一句口号、每一种色彩、甚至每一处细小的字间距都做得恰到好处,分毫不差。努力使旅游产品的开发更具人性化、更人文化。所谓人性化, 就是以人为本, 处处从顾客的需求出发, 一切为顾客着想, 并将具体行动落实于各个服务细节。</p>
+            <p class="about_headline">4. 服务质量的提高是开展品牌营销的坚硬后台。</p>
+            <p class="about_para">加强对服务流程的管理、服务人员素质的提高, 开展酒仙湖旅游产品品牌营销, 这是所有旅游企业必须长期坚持不懈的任务，人才的合理引进、人员的强化培训、科学管理等都是酒仙湖公司及配套服务行业必须做好的工作。同时在提供高质量服务的同时, 要形成自己的服务特色, 只有在业务环节的方方面面形成自身的特色并被消费者感知, 才能形成自身具有独一无二特色的品牌形象, 也才能在提及该品牌时, 消费者能联想到该品牌的特点。</p>
+        </div>
+
+        <!-- footer -->
+        <p class="footer">Copyright © 2017 www.jiubujiang.com.cn All Rights Reserved</p>
+        <!-- end footer -->
+    </div>
+    <!-- end content -->
+
+    <!-- 底部菜单 -->
+    <ul class="nav_bar clear">
+        <li>
+            <a href="index.html">
+                <p class="n_pic"><i class="iconfont">&#xe61c;</i></p>
+                <p class="n_txt">首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <p class="n_pic"><i class="iconfont">&#xe622;</i></p>
+                <p class="n_txt">网上商城</p>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <p class="n_pic"><i class="iconfont">&#xe698;</i></p>
+                <p class="n_txt">服务中心</p>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <p class="n_pic"><i class="iconfont">&#xe673;</i></p>
+                <p class="n_txt">关于我们</p>
+            </a>
+        </li>
+    </ul>
+    <!-- end 底部菜单 -->
+    <script src="js/amazeui.min.js"></script>
+</body>
+
+</html>

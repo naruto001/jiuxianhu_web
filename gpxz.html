@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link href="css/amazeui.min.css" rel="stylesheet">
+    <title>景区门票</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/tab.js"></script>
+    <script>
+    window.onload = function() {
+        var oBtn = document.getElementById("btn");
+        var oDiv = document.getElementById("nav_wrap");
+        var flag = 1;
+
+        oBtn.onclick = function() {
+            if (flag) {
+                oDiv.style.display = "block";
+                oDiv.onclick = function() {
+                    this.style.display = "none";
+                }
+            } else {
+                oDiv.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="payment.html" class="back"><i class="iconfont">&#xe63c;</i></a>
+        <p class="h_tit">景区门票</p>
+        <a class="iconfont menu" href="javascript:;" id="btn">&#xe696;</a>
+    </div>
+    <!-- end header -->
+    <!-- 下拉菜单 -->
+    <div class="nav_wrap" id="nav_wrap" style="display:none;">
+        <ul class="nav">
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe696;</i>
+                    <span>导航</span>
+                </a>
+            </li>
+            <li>
+                <a href="jbjgk.html">
+                    <i class="iconfont">&#xe606;</i>
+                    <span>酒埠江旅游区</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqzx.html">
+                    <i class="iconfont">&#xe69e;</i>
+                    <span>景区新闻</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqfg.html">
+                    <i class="iconfont">&#xe73b;</i>
+                    <span>景区风光</span>
+                </a>
+            </li>
+            <li>
+                <a href="jqsp.html">
+                    <i class="iconfont">&#xe647;</i>
+                    <span>景区视频</span>
+                </a>
+            </li>
+            <li>
+                <a href="whcs.html">
+                    <i class="iconfont">&#xe63f;</i>
+                    <span>景区文化</span>
+                </a>
+            </li>
+            <li>
+                <a href="wssc.html">
+                    <i class="iconfont">&#xe622;</i>
+                    <span>网上商城</span>
+                </a>
+            </li>
+            <li>
+                <a href="zxly.html">
+                    <i class="iconfont">&#xe698;</i>
+                    <span>服务中心</span>
+                </a>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="iconfont">&#xe673;</i>
+                    <span>关于我们</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- end 下拉菜单 -->
+    <!-- content -->
+    <div class="gpxz_content">
+        <div class="gpxz_wrap">
+            <div class="gpxz_header"></div>
+            <div class="gpxz_time_wrap">
+                <p class="gpxz_tit"><i class="iconfont">&#xe6c6;</i>开放时间</p>
+                <p class="gpxz_txt">8:00-17:00（开放时间）</p>
+            </div>
+            <div class="gpxz_time_wrap">
+                <p class="gpxz_tit"><i class="iconfont">&#xe621;</i>取票方式</p>
+                <p class="gpxz_txt">扫描手机短信二维码，需携带本人的身份证（取票方式）</p>
+            </div>
+            <div class="gpxz_time_wrap">
+                <p class="gpxz_tit"><i class="iconfont">&#xe637;</i>取票地点</p>
+                <p class="gpxz_txt">景区服务中心（取票中心）</p>
+            </div>
+            <div class="gpxz_time_wrap">
+                <p class="gpxz_tit"><i class="iconfont">&#xe601;</i>预定须知</p>
+                <p class="gpxz_txt">1.携带本人身份证 2.提前1小时预订(子-预定须知)）</p>
+            </div>
+            <div class="gpxz_time_wrap">
+                <p class="gpxz_tit"><i class="iconfont">&#xe649;</i>游玩主题</p>
+                <p class="gpxz_txt">此次踏青赏花旅游季，把山、水、花、林与历史文化、休闲娱乐、乡村美食相结合（景区主题</p>
+            </div>
+            <div class="gpxz_time_wrap">
+                <p class="gpxz_tit"><i class="iconfont">&#xe61f;</i>预定须知</p>
+                <p class="gpxz_txt">酒埠江国家地质公园位于攸县东部，地处湘赣交界的罗霄山脉中段西侧。湘东铁路和106国道从公园西侧通过。攸县酒埠江地质公园距长沙约170公里，总面积232平方公里，有120多个中型溶洞和天坑。</p>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <script src="js/amazeui.min.js"></script>
+</body>
+
+</html>

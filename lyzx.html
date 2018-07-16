@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+    <meta content="portrait" name="x5-orientation" />
+    <meta content="portrait" name="screen-orientation" />
+    <meta content="true" name="x5-fullscreen" />
+    <meta content="yes" name="full-screen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta content="YES" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-status-bar-style" />
+    <meta content="-1" http-equiv="Expires" />
+    <meta content="no-cache" http-equiv="pragram" />
+    <!-- amazeUi -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <!-- Set render engine for 360 browser -->
+    <meta content="webkit" name="renderer">
+    <!-- No Baidu Siteapp-->
+    <meta content="no-siteapp" http-equiv="Cache-Control" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta content="yes" name="mobile-web-app-capable">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Amaze UI" name="apple-mobile-web-app-title" />
+    <meta content="#0e90d2" name="msapplication-TileColor" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="full-screen" content="yes" />
+    <link href="css/amazeui.min.css" rel="stylesheet">
+    <title>旅游咨询</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/rem.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+    window.onload = function() {
+        var oBtn = document.getElementById("btn");
+        var oDiv = document.getElementById("nav_wrap");
+        var flag = 1;
+
+        oBtn.onclick = function() {
+            if (flag) {
+                oDiv.style.display = "block";
+                oDiv.onclick = function() {
+                    this.style.display = "none";
+                }
+            } else {
+                oDiv.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a href="index.html" class="back"><i class="iconfont">&#xe63c;</i></a>
+        <p class="h_tit">服务中心</p>
+        <a class="iconfont menu" href="javascript:;" id="btn">&#xe696;</a>
+    </div>
+    <!-- end header -->
+    <!-- 下拉菜单 -->
+   <div class="nav_wrap" id="nav_wrap" style="display:none;">
+    <ul class="nav">
+        <li>
+            <a href="javascript:;">
+                <i class="iconfont">&#xe696;</i>
+                <span>导航</span>
+            </a>
+        </li>
+        <li>
+            <a href="jbjgk.html">
+                <i class="iconfont">&#xe606;</i>
+                <span>酒埠江旅游区</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqzx.html">
+                <i class="iconfont">&#xe69e;</i>
+                <span>景区新闻</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqfg.html">
+                <i class="iconfont">&#xe73b;</i>
+                <span>景区风光</span>
+            </a>
+        </li>
+        <li>
+            <a href="jqsp.html">
+                <i class="iconfont">&#xe647;</i>
+                <span>景区视频</span>
+            </a>
+        </li>
+        <li>
+            <a href="whcs.html">
+                <i class="iconfont">&#xe63f;</i>
+                <span>景区文化</span>
+            </a>
+        </li>
+        <li>
+            <a href="wssc.html">
+                <i class="iconfont">&#xe622;</i>
+                <span>网上商城</span>
+            </a>
+        </li>
+        <li>
+            <a href="zxly.html">
+                <i class="iconfont">&#xe698;</i>
+                <span>服务中心</span>
+            </a>
+        </li>
+        <li>
+            <a href="about.html">
+                <i class="iconfont">&#xe673;</i>
+                <span>关于我们</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- end 下拉菜单 -->
+    <!-- content -->
+    <div class="content">
+        <!-- zxly_nav -->
+        <div class="zxly_nav_wrap">
+            <ul class="zxly_nav">
+                <li>
+                    <a href="zxly.html">在线留言</a>
+                </li>
+                <li>
+                    <a class="zxly_active"  href="lyzx.html">旅游咨询</a>
+                </li>
+                <li>
+                    <a href="zxns.html">招贤纳士</a>
+                </li>
+            </ul>
+        </div>
+        <!-- end zxly_nav -->
+        <div class="bg_bar"></div>
+        
+        <!-- accordion -->
+
+        <div class="accordion_wrap">
+            <section data-am-widget="accordion" class="am-accordion am-accordion-basic" data-am-accordion='{  }'>
+                <dl class="am-accordion-item am-active">
+                    <dt class="am-accordion-title">
+                       <p class="acc_tit">1、酒仙湖地点？</p>
+                    </dt>
+                    <dd class="am-accordion-bd am-collapse am-in">
+                      <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                      <div class="am-accordion-content">
+                        答：湖南株洲攸县酒埠江镇。
+                      </div>
+                    </dd>
+                </dl>
+                <dl class="am-accordion-item">
+                    <dt class="am-accordion-title">
+                      <p class="acc_tit">2 、酒仙湖有哪些参与性的活动？</p>
+                    </dt>
+                    <dd class="am-accordion-bd am-collapse ">
+                      <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                      <div class="am-accordion-content">
+                        答：磨豆腐、打铁水、皮影戏、彩虹跑等多种活动可参与。
+                      </div>
+                    </dd>
+                </dl>
+                <dl class="am-accordion-item">
+                    <dt class="am-accordion-title">
+                      <p class="acc_tit">3、从长沙到酒仙湖是怎么去的?</p>
+                    </dt>
+                    <dd class="am-accordion-bd am-collapse ">
+                      <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                      <div class="am-accordion-content">
+                        答：可坐大巴到网岭下车，做班车30分钟到酒埠江镇酒仙湖景区。高速走沪昆1小时30分钟可到。
+                      </div>
+                    </dd>
+                </dl>
+                <dl class="am-accordion-item">
+                    <dt class="am-accordion-title">
+                      <p class="acc_tit">4、株洲市至酒仙湖在哪里坐车?最早的车次是几点?</p>
+                    </dt>
+                    <dd class="am-accordion-bd am-collapse ">
+                      <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                      <div class="am-accordion-content">
+                        答：株洲汽车站、最早8点30。
+                      </div>
+                    </dd>
+                </dl>
+                <dl class="am-accordion-item">
+                    <dt class="am-accordion-title">
+                      <p class="acc_tit">5、酒仙湖里有住宿的地方吗？</p>
+                    </dt>
+                    <dd class="am-accordion-bd am-collapse ">
+                      <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                      <div class="am-accordion-content">
+                        答：有。一般不对外开发，活动期间可开发预订，另外，离景区10分钟车程，在酒埠江大坝下同心湖酒店可预订住宿。
+                      </div>
+                    </dd>
+                </dl><dl class="am-accordion-item">
+                    <dt class="am-accordion-title">
+                        <p class="acc_tit">6 、小孩入园游览免费吗？</p>
+                    </dt>
+                    <dd class="am-accordion-bd am-collapse ">
+                      <!-- 规避 Collapase 处理有 padding 的折叠内容计算计算有误问题， 加一个容器 -->
+                      <div class="am-accordion-content">
+                        答：1米2以下儿童免费，1.2~1.4米：45元/人
+                      </div>
+                    </dd>
+                </dl>
+            </section>
+        </div>
+
+        <!-- end accordion -->
+
+        <!-- footer -->
+        <!-- <p class="footer">Copyright © 2017 www.jiubujiang.com.cn All Rights Reserved</p> -->
+        <!-- end footer -->
+    </div>
+    <!-- end content -->
+   <!-- 底部菜单 -->
+   <ul class="nav_bar clear">
+    <li>
+        <a href="index.html">
+            <p class="n_pic"><i class="iconfont">&#xe61c;</i></p>
+            <p class="n_txt">首页</p>
+        </a>
+    </li>
+    <li>
+        <a href="wssc.html">
+            <p class="n_pic"><i class="iconfont">&#xe622;</i></p>
+            <p class="n_txt">网上商城</p>
+        </a>
+    </li>
+    <li>
+        <a href="zxly.html">
+            <p class="n_pic"><i class="iconfont">&#xe698;</i></p>
+            <p class="n_txt">服务中心</p>
+        </a>
+    </li>
+    <li>
+        <a href="about.html">
+            <p class="n_pic"><i class="iconfont">&#xe673;</i></p>
+            <p class="n_txt">关于我们</p>
+        </a>
+    </li>
+</ul>
+<!-- end 底部菜单 -->
+    <script src="js/amazeui.min.js"></script>
+</body>
+
+</html>
